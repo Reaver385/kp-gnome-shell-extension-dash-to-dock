@@ -39,7 +39,7 @@ switching between windows and desktops.
 %setup -q -n dash-to-dock-%{gittag}
 
 %install
-make install INSTALLBASE=%{buildroot}%{_datadir}/gnome-shell/extensions/%{uuid} VERSION=%{version}.git%{gittag}
+make install INSTALLBASE=%{buildroot}%{_datadir}/gnome-shell/extensions/ VERSION=%{version}.git%{gittag}
 
 %files
 %doc README.md COPYING
