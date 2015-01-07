@@ -1,9 +1,12 @@
 %global uuid dash-to-dock@micxgx.gmail.com
-%global gittag 6a58c86ec6925afab3f40e4a2892cbed6cae8acf
+#%global gittag 6a58c86ec6925afab3f40e4a2892cbed6cae8acf
+%global gittag 8d2ccc73b79a483126bd1b23e6fe0de356dd7c73
+%global gitshorttag 8d2ccc7
+
 
 Name:           gnome-shell-extension-dash-to-dock
-Version:        0.35
-Release:        1.git656e064%{?dist}
+Version:        0.35.1
+Release:        1.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -46,5 +49,8 @@ make install INSTALLBASE=%{buildroot}%{_datadir}/gnome-shell/extensions/ VERSION
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Sun Nov 16 2014 Ian Firns <firnsy@kororproject.org> - 0.35.1-1.git8d2ccc7
+- Update to lastest upstream release
+
 * Sun Nov 16 2014 Ian Firns <firnsy@kororproject.org> - 0.35-1.git656e064
 - Initial package for Korora
