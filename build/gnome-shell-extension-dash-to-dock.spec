@@ -6,7 +6,7 @@
 
 Name:           gnome-shell-extension-dash-to-dock
 Version:        0.35.1
-Release:        1.git%{gitshorttag}%{?dist}
+Release:        2.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -31,6 +31,7 @@ BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(upower-glib)
 
 Requires:       gnome-shell >= 3.14.0
+Requires(post): glib2
 
 
 %description
@@ -44,11 +45,24 @@ switching between windows and desktops.
 %install
 make install INSTALLBASE=%{buildroot}%{_datadir}/gnome-shell/extensions/ VERSION=%{version}.git%{gittag}
 
+mkdir -p %{buildroot}%{_datadir}/glib-2.0/schemas/
+install -m 0644 %{_builddir}/dash-to-dock-%{gittag}/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml %{buildroot}%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
+
+%post
+glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
+
+%postun
+glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
+
 %files
 %doc README.md COPYING
+%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Thu Jan  8 2015 Ian Firns <firnsy@kororproject.org> - 0.35.1-2.git8d2ccc7
+- Install gschema
+
 * Sun Nov 16 2014 Ian Firns <firnsy@kororproject.org> - 0.35.1-1.git8d2ccc7
 - Update to lastest upstream release
 
