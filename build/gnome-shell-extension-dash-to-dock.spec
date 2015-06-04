@@ -1,12 +1,13 @@
 %global uuid dash-to-dock@micxgx.gmail.com
 #%global gittag 6a58c86ec6925afab3f40e4a2892cbed6cae8acf
-%global gittag 8d2ccc73b79a483126bd1b23e6fe0de356dd7c73
-%global gitshorttag 8d2ccc7
+#%global gittag 8d2ccc73b79a483126bd1b23e6fe0de356dd7c73
+%global gittag 91e7913649c15592a9c54b277f8056d8cd9bd786
+%global gitshorttag 91e7913
 
 
 Name:           gnome-shell-extension-dash-to-dock
-Version:        0.35.1
-Release:        2.git%{gitshorttag}%{?dist}
+Version:        0.46.1
+Release:        1.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -60,6 +61,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Thu Jun  4 2015 Ian Firns <firnsy@kororproject.org> - 0.46.1-1.git91e7913
+- Updated to latest upstream.
+
 * Thu Jan  8 2015 Ian Firns <firnsy@kororproject.org> - 0.35.1-2.git8d2ccc7
 - Install gschema
 
