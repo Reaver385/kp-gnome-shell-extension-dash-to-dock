@@ -7,12 +7,13 @@
 
 Name:           gnome-shell-extension-dash-to-dock
 Version:        0.46.1
-Release:        1.git%{gitshorttag}%{?dist}
+Release:        2.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
 URL:            https://github.com/micheleg/dash-to-dock
 Source0:        https://github.com/micheleg/dash-to-dock/archive/%{gittag}.tar.gz
+Patch0:         korora-schema-defaults.patch
 
 BuildRequires:  gettext
 BuildRequires:  intltool
@@ -42,6 +43,7 @@ switching between windows and desktops.
 
 %prep
 %setup -q -n dash-to-dock-%{gittag}
+%patch0 -p1
 
 %install
 make install INSTALLBASE=%{buildroot}%{_datadir}/gnome-shell/extensions/ VERSION=%{version}.git%{gittag}
@@ -61,6 +63,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Wed Jul 15 2015 Ian Firns <firnsy@kororproject.org> - 0.46.1-2.git91e7913
+- Patch our defaults straight into the plugin.
+
 * Thu Jun  4 2015 Ian Firns <firnsy@kororproject.org> - 0.46.1-1.git91e7913
 - Updated to latest upstream.
 
