@@ -1,6 +1,6 @@
 diff -Nurd dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0-korora/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
 --- dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml	2016-07-02 05:48:08.000000000 +1000
-+++ dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0-korora/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml	2016-07-05 13:23:29.475953261 +1000
++++ dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0-korora/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml	2016-07-05 13:39:47.584938604 +1000
 @@ -56,7 +56,7 @@
        <description>Makes the background of the dash opaque improving readability when in autohide mode.</description>
      </key>
@@ -10,7 +10,7 @@ diff -Nurd dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0/schemas/org.gno
        <summary>Opacity of the dash background</summary>
        <description>Sets the opacity of the dash background  when in autohide mode.</description>
      </key>
-@@ -121,7 +121,7 @@
+@@ -121,27 +121,27 @@
        <description>TODO</description>
      </key>
      <key type="b" name="custom-theme-running-dots">
@@ -19,7 +19,10 @@ diff -Nurd dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0/schemas/org.gno
        <summary>TODO</summary>
        <description>TODO</description>
      </key>
-@@ -131,17 +131,17 @@
+     <key type="b" name="custom-theme-customize-running-dots">
+-      <default>false</default>
++      <default>true</default>
+       <summary>Customize the style of the running application indicators.</summary>
        <description>Customize the style of the running application indicators.</description>
      </key>
      <key type="s" name="custom-theme-running-dots-color">

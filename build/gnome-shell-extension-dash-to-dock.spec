@@ -16,7 +16,7 @@
 
 Name:           gnome-shell-extension-dash-to-dock
 Version:        0.53
-Release:        1.git%{gitshorttag}%{?dist}.2
+Release:        1.git%{gitshorttag}%{?dist}.3
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
