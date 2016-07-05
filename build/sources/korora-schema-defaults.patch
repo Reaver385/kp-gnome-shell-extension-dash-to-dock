@@ -27,13 +27,13 @@ diff -Nurd dash-to-dock-cd0d4bcc4c2a281e83622acd09ca75fd92a416d0/schemas/org.gno
      </key>
      <key type="s" name="custom-theme-running-dots-color">
 -      <default>"#ffffff"</default>
-+      <default>"#4378b7"</default>
++      <default>"#cfd6e6"</default>
        <summary>Running application indicators color</summary>
        <description>Customize the color of the running application indicators.</description>
      </key>
      <key type="s" name="custom-theme-running-dots-border-color">
 -      <default>"#ffffff"</default>
-+      <default>"#454d57"</default>
++      <default>"#5294e2"</default>
        <summary>Running application indicators border color.</summary>
        <description>Customize the border color of the running application indicators.</description>
      </key>
