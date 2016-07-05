@@ -8,13 +8,15 @@
 #%global gitshorttag e80e7cf
 #%global gittag ef68847834f053dcd117cba889da6efe37471a48
 #%global gitshorttag ef68847
-%global gittag 14528012ac9a3271fe72c5ab69216b4a8ec4f572
-%global gitshorttag 1452801
+#%global gittag 14528012ac9a3271fe72c5ab69216b4a8ec4f572
+#%global gitshorttag 1452801
+%global gittag cd0d4bcc4c2a281e83622acd09ca75fd92a416d0
+%global gitshorttag cd0d4bc
 
 
 Name:           gnome-shell-extension-dash-to-dock
 Version:        0.53
-Release:        1.git%{gitshorttag}%{?dist}
+Release:        1.git%{gitshorttag}%{?dist}.2
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
