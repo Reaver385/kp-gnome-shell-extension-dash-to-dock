@@ -16,7 +16,7 @@
 
 Name:           gnome-shell-extension-dash-to-dock
 Version:        0.53
-Release:        2.git%{gitshorttag}%{?dist}
+Release:        3.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -72,6 +72,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Thu Jul 07 2016 Chris Smart <csmart@kororproject.org> - 0.53-3.git1452801
+- Set default icon size to 32 instead of 48
+
 * Tue Jul 05 2016 Chris Smart <csmart@kororproject.org> - 0.53-2.git1452801
 - Fix dots on icons to show open windows
 
