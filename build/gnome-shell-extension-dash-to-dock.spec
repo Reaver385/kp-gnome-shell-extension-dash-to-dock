@@ -10,13 +10,15 @@
 #%global gitshorttag ef68847
 #%global gittag 14528012ac9a3271fe72c5ab69216b4a8ec4f572
 #%global gitshorttag 1452801
-%global gittag cd0d4bcc4c2a281e83622acd09ca75fd92a416d0
-%global gitshorttag cd0d4bc
+#%global gittag cd0d4bcc4c2a281e83622acd09ca75fd92a416d0
+#%global gitshorttag cd0d4bc
+%global gittag 70d3abe4d7b94c158d7dcb6a730219565b54e37a
+%global gitshorttag 70d3abe
 
 
 Name:           gnome-shell-extension-dash-to-dock
 Version:        0.53
-Release:        3.git%{gitshorttag}%{?dist}
+Release:        4.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -72,6 +74,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Tue Sep 13 2016 Chris Smart <csmart@kororproject.org> - 0.53-4.git70d3abe
+- Support for GNOME 3.22
+
 * Thu Jul 07 2016 Chris Smart <csmart@kororproject.org> - 0.53-3.git1452801
 - Set default icon size to 32 instead of 48
 
