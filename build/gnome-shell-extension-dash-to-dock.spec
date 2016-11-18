@@ -12,13 +12,15 @@
 #%global gitshorttag 1452801
 #%global gittag cd0d4bcc4c2a281e83622acd09ca75fd92a416d0
 #%global gitshorttag cd0d4bc
-%global gittag 70d3abe4d7b94c158d7dcb6a730219565b54e37a
-%global gitshorttag 70d3abe
+#%global gittag 70d3abe4d7b94c158d7dcb6a730219565b54e37a
+#%global gitshorttag 70d3abe
+%global gittag 5e531c0b16f3db4b8a7aa5588e757f4bfb7a1b8a
+%global gitshorttag 5e531c0
 
 
 Name:           gnome-shell-extension-dash-to-dock
-Version:        0.53
-Release:        4.git%{gitshorttag}%{?dist}
+Version:        0.55
+Release:        1.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -74,6 +76,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Tue Sep 13 2016 Chris Smart <csmart@kororproject.org> - 0.55-1.git5e531c0
+- Version 0.55
+
 * Tue Sep 13 2016 Chris Smart <csmart@kororproject.org> - 0.53-4.git70d3abe
 - Support for GNOME 3.22
 
