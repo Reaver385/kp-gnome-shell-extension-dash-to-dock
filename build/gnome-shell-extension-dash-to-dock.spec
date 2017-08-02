@@ -1,26 +1,11 @@
 %global uuid dash-to-dock@micxgx.gmail.com
-#%global gittag 6a58c86ec6925afab3f40e4a2892cbed6cae8acf
-#%global gittag 8d2ccc73b79a483126bd1b23e6fe0de356dd7c73
-#%global gittag 91e7913649c15592a9c54b277f8056d8cd9bd786
-#%global gittag 2b48c5b04f9d485072df76f96dcce84c14047dd4
-#%global gitshorttag 2b48c5b
-#%global gittag e80e7cf5f0e46f78883291bff8362a748fec3290
-#%global gitshorttag e80e7cf
-#%global gittag ef68847834f053dcd117cba889da6efe37471a48
-#%global gitshorttag ef68847
-#%global gittag 14528012ac9a3271fe72c5ab69216b4a8ec4f572
-#%global gitshorttag 1452801
-#%global gittag cd0d4bcc4c2a281e83622acd09ca75fd92a416d0
-#%global gitshorttag cd0d4bc
-#%global gittag 70d3abe4d7b94c158d7dcb6a730219565b54e37a
-#%global gitshorttag 70d3abe
-%global gittag 5e531c0b16f3db4b8a7aa5588e757f4bfb7a1b8a
-%global gitshorttag 5e531c0
+%global gittag befc592f02278ad430f6eae3110a064d009cef0e
+%global gitshorttag befc592
 
 
 Name:           gnome-shell-extension-dash-to-dock
-Version:        0.55
-Release:        1.git%{gitshorttag}%{?dist}
+Version:        0.60
+Release:        0.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
@@ -76,8 +61,8 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
-* Tue Sep 13 2016 Chris Smart <csmart@kororproject.org> - 0.55-1.git5e531c0
-- Version 0.55
+* Wed Aug  2 2017 Ian Firns <firnsy@kororproject.org> - 0.60.0-1.gitbefc592
+- Updated to latest upstream.
 
 * Tue Sep 13 2016 Chris Smart <csmart@kororproject.org> - 0.53-4.git70d3abe
 - Support for GNOME 3.22
