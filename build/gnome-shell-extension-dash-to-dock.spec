@@ -11,6 +11,7 @@ Summary:        A dock for the GNOME Shell
 License:        GPLv2+
 URL:            https://github.com/micheleg/dash-to-dock
 Source0:        https://github.com/micheleg/dash-to-dock/archive/%{gittag}.tar.gz
+Patch0: korora-schema-defaults.patch
 
 BuildRequires:  gettext
 BuildRequires:  intltool
