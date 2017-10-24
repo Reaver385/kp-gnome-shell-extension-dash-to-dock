@@ -1,17 +1,17 @@
 %global uuid dash-to-dock@micxgx.gmail.com
-%global gittag befc592f02278ad430f6eae3110a064d009cef0e
-%global gitshorttag befc592
+%global gittag 87f46c7c759af5fc83e75237d309947ba3012fa4
+%global gitshorttag 87f46c7
 
 
 Name:           gnome-shell-extension-dash-to-dock
-Version:        0.60
+Version:        0.61
 Release:        0.git%{gitshorttag}%{?dist}
 Summary:        A dock for the GNOME Shell
 
 License:        GPLv2+
 URL:            https://github.com/micheleg/dash-to-dock
 Source0:        https://github.com/micheleg/dash-to-dock/archive/%{gittag}.tar.gz
-Patch0:         korora-schema-defaults.patch
+Patch0: korora-schema-defaults.patch
 
 BuildRequires:  gettext
 BuildRequires:  intltool
@@ -61,6 +61,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas/ 2>/dev/null
 %{_datadir}/gnome-shell/extensions/%{uuid}/
 
 %changelog
+* Wed Oct 18 2017 Aidan Kahrs <axk4545@rit.edu> - 0.61-1.git87f46c7
+- Updated to latest upstream.
+
 * Wed Aug  2 2017 Ian Firns <firnsy@kororproject.org> - 0.60.0-1.gitbefc592
 - Updated to latest upstream.
 
